@@ -1,0 +1,112 @@
+---
+title: "Gaze Pursuit Behavior Study"
+output:
+  pdf_document
+---
+
+
+`r library(knitr)` `r opts_chunk$set(cache=FALSE,echo=FALSE)`
+
+```{r loadlibrary, cache=FALSE,message=FALSE,warning=FALSE}
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(xtable)
+```
+
+```{r loadcsv, cache=TRUE}
+filename<-"~/GitHub/Pursuit-Behavior/behaviorRanalysis/behaviormeasured.csv"
+d <- read.csv(filename, na.strings="NaN")
+cpal<-c('#0000FF','#BE00BE','#FF0000','#000000')
+
+```
+
+```{r RampBoxplots }
+d<-subset(d,pursuit_velocity%%5==0)
+d$iep<-as.factor(d$iep*sign(d$pursuit_velocity))
+levels(d$iep)<-c('Backward','Centered','Forward')
+d$direction<-sign(d$pursuit_velocity)
+
+qplot(factor(pursuit_velocity),hpeak,data=subset(d,stepramp==0 & direction==-1),fill=factor(iep),facets=monkey~.,geom='boxplot',outlier.size=1)+
+  coord_cartesian(ylim = c(-300,0))+
+  scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))+
+  theme(axis.text.y = element_text(angle = 0, vjust = 0.5, hjust=1))+
+  xlab('Target Velocity (deg/s)')+
+  ylab('Peak Head Velocity (deg/s)')+
+  guides(fill=guide_legend(title="Initial\nEye Position"))
+
+
+qplot(factor(pursuit_velocity),hpeak,data=subset(d,stepramp==0 & direction==1),geom='boxplot',fill=factor(iep),facets=monkey~.,outlier.size=1)+
+  coord_cartesian(ylim = c(0,300))+
+  scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))+
+  theme(axis.text.y = element_text(angle = 0, vjust = 0.5, hjust=1))+
+  xlab('Target Velocity (deg/s)')+
+  ylab('Peak Head Velocity (deg/s)')+
+  guides(fill=guide_legend(title="Initial\nEyePosition"))
+
+```
+
+```{r StepRampBoxplots}
+d$pursuit_direction<-as.factor(d$direction)
+dsr<-subset(d,stepramp==1 & iep=='Centered')
+dsr$stepdirection<-as.factor(dsr$stepdirection)
+levels(dsr$stepdirection)<-c('Backward Step','No Step','Forward Step')
+
+qplot(factor(pursuit_velocity),hpeak,data=subset(dsr,direction==-1),geom='boxplot',fill=stepdirection,facets=monkey~.,outlier.size=1)+scale_fill_manual(values=cpal)+coord_cartesian(ylim = c(-400,0))+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))+
+  xlab('Target Velocity (deg/s)')+
+  ylab('Peak Head Velocity (deg/s)')+
+  guides(fill=guide_legend(title="Pursuit\nDirection"))
+
+qplot(factor(pursuit_velocity),hpeak,data=subset(dsr,direction==1),geom='boxplot',fill=stepdirection,facets=monkey~.,outlier.size=1)+coord_cartesian(ylim = c(0,300))+scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))+
+  xlab('Target Velocity (deg/s)')+
+  ylab('Peak Head Velocity (deg/s)')+
+  guides(fill=guide_legend(title="Pursuit\nDirection"))
+```
+
+
+
+```{r RampPursuitLatency}
+
+qplot(iep,pursuit_start,data=subset(d,stepramp==0),geom='boxplot',fill=pursuit_direction,facets=.~monkey)+scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 20, vjust = 0.5, hjust=0.5))+
+  xlab('Initial Eye Position (deg)')+
+  ylab('Gaze Pursuit Latency')
+       
+```
+
+```{r RampHeadLatency}
+
+qplot(iep,hstart,data=subset(d,stepramp==0),geom='boxplot',fill=monkey,facets=.~pursuit_direction)+scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 20, vjust = 0.5, hjust=0.5))+
+  xlab('Initial Eye Position (deg)')+
+  ylab('Head Latency (ms)')
+```
+
+```{r StepRampGSAmp}
+qplot(stepdirection,gamp1*direction,data=dsr,geom='boxplot',fill=monkey,facets=.~pursuit_direction)+scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 20, vjust = 0.5, hjust=0.5))+
+  xlab('Step Direction')+
+  ylab('Gaze Shift Amplitude (deg)')
+
+```
+
+```{r StepRampPursuitLatency}
+
+qplot(stepdirection,pursuit_start,data=dsr,geom='boxplot',fill=monkey,facets=.~pursuit_direction)+scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 20, vjust = 0.5, hjust=0.5))+
+  xlab('Step Direction')+
+  ylab('Gaze Pursuit Latency (ms)')
+```
+
+```{r StepRampHeadLatency}
+dsr$hstart[dsr$hstart<10]<-NA
+qplot(stepdirection,hstart,data=dsr,geom='boxplot',fill=monkey,facets=.~pursuit_direction)+scale_fill_manual(values=cpal)+
+  theme(axis.text.x = element_text(angle = 20, vjust = 0.5, hjust=0.5))+
+  xlab('Step Direction')+
+  ylab('Head Latency (ms)')
+```
