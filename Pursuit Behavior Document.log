@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.9)  10 MAR 2015 18:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.9)  11 MAR 2015 14:25
 entering extended mode
 **Pursuit*Behavior*Document.tex
 
@@ -258,6 +258,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
@@ -274,7 +280,7 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
  [4] [5]
-<./figs/IEPMethodsFigure.png, id=21, 1715.6898pt x 1947.9174pt>
+<./figs/IEPMethodsFigure.png, id=23, 1715.6898pt x 1947.9174pt>
 File: ./figs/IEPMethodsFigure.png Graphic file (type png)
 
 <use ./figs/IEPMethodsFigure.png>
@@ -284,7 +290,7 @@ Package pdftex.def Info: ./figs/IEPMethodsFigure.png used on input line 57.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/CenterIEP.png, id=22, 838.8138pt x 853.2678pt>
+<./figs/CenterIEP.png, id=24, 838.8138pt x 853.2678pt>
 File: ./figs/CenterIEP.png Graphic file (type png)
 
 <use ./figs/CenterIEP.png>
@@ -312,7 +318,7 @@ Missing character: There is no ì in font cmr10!
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/CenterRegression.png, id=23, 586.3506pt x 450.9648pt>
+<./figs/CenterRegression.png, id=25, 586.3506pt x 450.9648pt>
 File: ./figs/CenterRegression.png Graphic file (type png)
 
 <use ./figs/CenterRegression.png>
@@ -322,18 +328,7 @@ Package pdftex.def Info: ./figs/CenterRegression.png used on input line 73.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 79.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 79.
-
-Overfull \hbox (1.61584pt too wide) in paragraph at lines 79--96
-[][] 
- []
-
-<./figs/ForwardIEP.png, id=24, 827.2506pt x 890.3664pt>
+<./figs/ForwardIEP.png, id=26, 827.2506pt x 890.3664pt>
 File: ./figs/ForwardIEP.png Graphic file (type png)
 
 <use ./figs/ForwardIEP.png>
@@ -361,7 +356,7 @@ Missing character: There is no ì in font cmr10!
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/BackwardIEP.png, id=25, 774.2526pt x 839.2956pt>
+<./figs/BackwardIEP.png, id=27, 774.2526pt x 839.2956pt>
 File: ./figs/BackwardIEP.png Graphic file (type png)
 
 <use ./figs/BackwardIEP.png>
@@ -389,14 +384,14 @@ Missing character: There is no ì in font cmr10!
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/RampHeadLatency.png, id=26, 395.5578pt x 326.1786pt>
+<./figs/RampHeadLatency.png, id=28, 395.5578pt x 326.1786pt>
 File: ./figs/RampHeadLatency.png Graphic file (type png)
 
 <use ./figs/RampHeadLatency.png>
 Package pdftex.def Info: ./figs/RampHeadLatency.png used on input line 117.
 (pdftex.def)             Requested size: 272.99881pt x 225.12817pt.
 
-<./figs/RampBoxplot.png, id=27, 956.373pt x 433.1382pt>
+<./figs/RampBoxplot.png, id=29, 956.373pt x 433.1382pt>
 File: ./figs/RampBoxplot.png Graphic file (type png)
 
 <use ./figs/RampBoxplot.png>
@@ -412,7 +407,7 @@ Missing character: There is no ì in font cmr10!
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./figs/RampRegressions.png, id=28, 497.2176pt x 445.665pt>
+<./figs/RampRegressions.png, id=30, 497.2176pt x 445.665pt>
 File: ./figs/RampRegressions.png Graphic file (type png)
 
 <use ./figs/RampRegressions.png>
@@ -431,7 +426,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-<./figs/StepRampExample.png, id=29, 1123.0758pt x 893.739pt>
+<./figs/StepRampExample.png, id=31, 1123.0758pt x 893.739pt>
 File: ./figs/StepRampExample.png Graphic file (type png)
 
 <use ./figs/StepRampExample.png>
@@ -456,7 +451,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-<./figs/StepRampBoxplot.png, id=30, 1000.2168pt x 445.1832pt>
+<./figs/StepRampBoxplot.png, id=32, 1000.2168pt x 445.1832pt>
 File: ./figs/StepRampBoxplot.png Graphic file (type png)
 
 <use ./figs/StepRampBoxplot.png>
@@ -469,7 +464,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-<./figs/StepRampLatencyandGSAmp.png, id=31, 400.3758pt x 631.158pt>
+<./figs/StepRampLatencyandGSAmp.png, id=33, 400.3758pt x 631.158pt>
 File: ./figs/StepRampLatencyandGSAmp.png Graphic file (type png)
 
 <use ./figs/StepRampLatencyandGSAmp.png>
@@ -477,7 +472,7 @@ Package pdftex.def Info: ./figs/StepRampLatencyandGSAmp.png used on input line
 152.
 (pdftex.def)             Requested size: 272.99881pt x 430.3856pt.
 
-<./figs/StepRampRegressions.png, id=32, 472.164pt x 431.211pt>
+<./figs/StepRampRegressions.png, id=34, 472.164pt x 431.211pt>
 File: ./figs/StepRampRegressions.png Graphic file (type png)
 
 <use ./figs/StepRampRegressions.png>
@@ -507,11 +502,7 @@ Missing character: There is no ô in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [8]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [9]
+ [8] [9]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
@@ -523,40 +514,23 @@ Missing character: There is no ô in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [12] [13 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/IEPMethodsFigu
-re.png (PNG copy)>] [14 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/
-CenterIEP.png (PNG copy)>] [15 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavio
-r/figs/CenterRegression.png (PNG copy)>] [16 <C:/Users/adam2/Documents/GitHub/P
-ursuit-Behavior/figs/ForwardIEP.png (PNG copy)>]
-[17 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/BackwardIEP.png (PNG
- copy)>] [18 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/RampHeadLat
+ [12] [13] [14 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/IEPMethod
+sFigure.png (PNG copy)>] [15 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/
+figs/CenterIEP.png (PNG copy)>] [16 <C:/Users/adam2/Documents/GitHub/Pursuit-Be
+havior/figs/CenterRegression.png (PNG copy)>] [17 <C:/Users/adam2/Documents/Git
+Hub/Pursuit-Behavior/figs/ForwardIEP.png (PNG copy)>]
+[18 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/BackwardIEP.png (PNG
+ copy)>] [19 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/RampHeadLat
 ency.png (PNG copy)> <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/Ram
-pBoxplot.png (PNG copy)>] [19 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior
-/figs/RampRegressions.png (PNG copy)>] [20 <C:/Users/adam2/Documents/GitHub/Pur
-suit-Behavior/figs/StepRampExample.png (PNG copy)>] [21 <C:/Users/adam2/Documen
-ts/GitHub/Pursuit-Behavior/figs/StepRampBoxplot.png (PNG copy)>] [22 <C:/Users/
+pBoxplot.png (PNG copy)>] [20 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior
+/figs/RampRegressions.png (PNG copy)>] [21 <C:/Users/adam2/Documents/GitHub/Pur
+suit-Behavior/figs/StepRampExample.png (PNG copy)>] [22 <C:/Users/adam2/Documen
+ts/GitHub/Pursuit-Behavior/figs/StepRampBoxplot.png (PNG copy)>] [23 <C:/Users/
 adam2/Documents/GitHub/Pursuit-Behavior/figs/StepRampLatencyandGSAmp.png (PNG c
-opy)>] [23 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/StepRampRegre
-ssions.png (PNG copy)>]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [24
+opy)>] [24 <C:/Users/adam2/Documents/GitHub/Pursuit-Behavior/figs/StepRampRegre
+ssions.png (PNG copy)>] [25
 
-] [25] [26]
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ì in font cmr12!
- [27] [28]
+] [26] [27] [28] [29]
 ("C:\Users\adam2\Documents\GitHub\Pursuit-Behavior\Pursuit Behavior Document.au
 x") ) 
 Here is how much of TeX's memory you used:
@@ -566,7 +540,7 @@ Here is how much of TeX's memory you used:
  6632 multiletter control sequences out of 15000+200000
  9446 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 41i,19n,38p,2457b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,19n,38p,2486b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/M
@@ -574,11 +548,11 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm120
-0.pfb>
-Output written on "Pursuit Behavior Document.pdf" (28 pages, 2258883 bytes).
+ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Pursuit Behavior Document.pdf" (29 pages, 2267221 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
